@@ -4,9 +4,9 @@ namespace Hexlet\Php\Runner;
 
 function run()
 {
-     = collect(['taylor', 'abigail', null])->map(function () {
-        return strtoupper();
+    $collection = collect(['taylor', 'abigail', null])->map(function ($name) {
+        return strtoupper($name);
     });
 
-    return ;
+    return $collection;
 }
